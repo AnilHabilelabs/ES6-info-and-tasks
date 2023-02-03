@@ -213,13 +213,19 @@ class Person{
         this.age=age;
     }
     showDetails(){
-        return `${this.name} ${this.age}`
+        console.log( `${this.name} ${this.age}`)
     }
 }
 class personChild extends Person{
     constructor(){
-        super('steve',21,22);
+        super('steve', 21, 22);
+    }
+    showDetails(){
+        console.log("hii");
     }
 }
-let person = new personChild();
-console.log(person.showDetails());
+let person = new Person("ram",15);
+// console.log(person.showDetails());
+
+let P = new personChild("anshukl",25)
+P.showDetails();
